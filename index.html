@@ -1,19 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Página de login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <p>Caixa de pesquisa</p>
-    <h3 style="color: white">Login</h3>
-    <input id="email" placeholder="Digite seu email . . .">
-    <input id="senha" placeholder="Digite a sua senha. . .">
-    <button id="butao" onclick="login()">Login</button>
-    <div id="background">    
+    <div class="form-container">
+        <p class="title">Login</p>
+        <form class="form">
+            <div class="input-group">
+                <label for="username">E-mail</label>
+                <input type="text" name="username" id="username" placeholder="">
+            </div>
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="">
+                <div class="forgot">
+                    <a href="./recuperar_senha.html">Esqueci minha senha</a>
+                </div>
+            </div>
+            <button class="sign">Login</button>
+        </form>
+        <div class="social-message">
+            <div class="line"></div>
+            <p class="message">Faça login com suas contas</p>
+            <div class="line"></div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.google.com/" target="_blank" aria-label="Acessar com o Google" class="icone">
+                <img src="./assets/images/google-circle.png" alt="Google icone" class="social-img"> </a>
+            <a href="https://github.com/" target="_blank" aria-label="Acessar com o Github" class="icone">
+                <img src="./assets/images/github.png" alt="Github icone" class="social-img"></a>
+            <a href="https://www.linkedin.com/home?originalSubdomain=br" target="_blank" aria-label="Acessar com o linkedin" class="icone">
+                <img src="./assets/images/linkedin.png" alt="Linkedin icone" class="social-img">
+            </a>
+        </div>
+        <p class="signup"> Não tem uma conta?
+            <a href="/CriarConta.html"rel="noopener noreferrer" href="#" class="">Criar conta</a>
+        </p>
     </div>
 </body>
-<script src="./import.js"></script>
+<script src="/script.js"></script>
+
 </html>
